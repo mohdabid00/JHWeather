@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>links}}
+</head>
+<body>
+   {{>navbar}}
+   <!--Main Header-->
+        <br><br>
+        <div class="col-md-12 md-12 main_header_left item-align-center">
+        <input type="text" placeholder="Enter Your City" name="city" id="city">
+        <br>
+        <button id="btn" class="srch_btn" value="button">Search</button>
+        <br><br>
+        <div class="weather_temp"style="display: none;">
+        <div class="box">
+        <div class="wave -one"></div>
+        <div class="wave -two"></div>
+        <div class="wave -three"></div>
+  
+        <div id="weathercon" >
+          <img src="" class="weather_image" style="color: #eccc68"></i>
+        </div>
+        <div class="info">
+          <h2 class="location">
+            <i class="fas fa-street-view" style="color: #fff" id="temp_cntry"></i
+            >
+            {%location%}, {%country%}
+          </h2>
+          <p id="date">WED | Nov 23 | 10:49AM</p>
+          <h1 class="temp">{%tempval%}&deg;C</h1>
+          <h3 class="tempmin_max">
+            Min {%tempmin%}&deg;C | Max {%tempmax%}&deg;C
+          </h3>
+        </div>
+      </div>
+        </div> 
+        </div>
+        </div>
+        
+    <br><br>
+    {{>footer}}
+    <script src="js/main.js"></script>
+</body>
+</html>
